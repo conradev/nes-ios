@@ -1,0 +1,3 @@
+[submodule "nesemu2/nesemu2"]
+	path = nesemu2/nesemu2
+	url = https://github.com/holodnak/nesemu2.git
