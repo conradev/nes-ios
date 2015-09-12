@@ -485,6 +485,7 @@
 		D0931CA41AEAC0B800E467A7 /* generator.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B5D1AEAC0B700E467A7 /* generator.c */; };
 		D0931CA51AEAC0B800E467A7 /* palette.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B5F1AEAC0B700E467A7 /* palette.c */; };
 		D0931CCA1AEAC56A00E467A7 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931CC91AEAC56A00E467A7 /* cpu.c */; };
+		D093E1741BA3EB17004E6378 /* nesemu2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01A3F9B1B325A4C008D5F87 /* nesemu2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0A2A3CA1B32A0CC004A1D59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A2A3C91B32A0CC004A1D59 /* main.m */; };
 		D0A2A3CD1B32A190004A1D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A2A3CB1B32A18A004A1D59 /* UIKit.framework */; };
 		D0A2A3CE1B32A3D1004A1D59 /* nesemu2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01A3F9B1B325A4C008D5F87 /* nesemu2.framework */; };
@@ -496,7 +497,6 @@
 		D0B4A05A1B23C7C1003EE0B2 /* smb.nes in Resources */ = {isa = PBXBuildFile; fileRef = D0A71B4A1AEDD9D800830564 /* smb.nes */; };
 		D0B4A05B1B23C824003EE0B2 /* nesemu2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0612DDD1AEDCEA1005964A7 /* nesemu2.framework */; };
 		D0BEA2331B32A8000068F41F /* smb.nes in Resources */ = {isa = PBXBuildFile; fileRef = D0BEA2321B32A8000068F41F /* smb.nes */; };
-		D906DB1B1AF323FA003B6910 /* nesemu2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01A3F9B1B325A4C008D5F87 /* nesemu2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -586,13 +586,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9612DF91AEDCEA1005964A7 /* Embed Frameworks */ = {
+		D093E1721BA3EAFA004E6378 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D906DB1B1AF323FA003B6910 /* nesemu2.framework in Embed Frameworks */,
+				D093E1741BA3EB17004E6378 /* nesemu2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2013,7 +2013,6 @@
 				D91A3E951B32520A008D5F87 /* Frameworks */,
 				D01A3E8A1B32520A008D5F87 /* Resources */,
 				D01A3EAE1B32520A008D5F87 /* Embed App Extensions */,
-				D9612DF91AEDCEA1005964A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2032,6 +2031,7 @@
 				D01A3E941B32520A008D5F87 /* Sources */,
 				D01A3E951B32520A008D5F87 /* Frameworks */,
 				D01A3E961B32520A008D5F87 /* Resources */,
+				D093E1721BA3EAFA004E6378 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2298,7 +2298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "WATCH_APP=\"${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Watch/NES.app\"\nWATCH_ENTITLEMENTS=\"${TARGET_TEMP_DIR}/WatchApp.xcent\"\nrm -f \"${WATCH_ENTITLEMENTS}\"\ncodesign -s \"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\" -f \"${WATCH_APP}/Frameworks/nesemu2.framework\"\ncodesign -d --entitlements \"${WATCH_ENTITLEMENTS}\" \"${WATCH_APP}\"\ncodesign --entitlements \"${WATCH_ENTITLEMENTS}\" -s \"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\" -f \"${WATCH_APP}\"";
+			shellScript = "WATCH_APP=\"${CONFIGURATION_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Watch/NES.app\"\nWATCH_ENTITLEMENTS=\"${TARGET_TEMP_DIR}/WatchApp.xcent\"\nrm -f \"${WATCH_ENTITLEMENTS}\"\ncodesign -s \"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\" -f \"${WATCH_APP}/Plugins/NESWatch.appex/Frameworks/nesemu2.framework\"\ncodesign -d --entitlements \"${WATCH_ENTITLEMENTS}\" \"${WATCH_APP}\"\ncodesign --entitlements \"${WATCH_ENTITLEMENTS}\" -s \"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\" -f \"${WATCH_APP}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
