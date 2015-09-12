@@ -24,12 +24,11 @@
 @implementation NESApplication
 
 - (BOOL)application:(NESApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    BOOL success = [super application:application didFinishLaunchingWithOptions:launchOptions];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[NESGameViewController alloc] init];
     [self.window makeKeyAndVisible];
     
-    return success;
+    return YES;
 }
 
 @end
