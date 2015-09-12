@@ -158,6 +158,7 @@ static void emulator_log(char *str) {
         if (context) {
             CAEAGLLayer *eaglLayer = [CAEAGLLayer layer];
             eaglLayer.opaque = YES;
+            eaglLayer.contentsScale = [[UIScreen mainScreen] scale];
             _layer = eaglLayer;
         }
     }

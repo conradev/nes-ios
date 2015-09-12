@@ -50,6 +50,7 @@ static GLuint glVertexBuffer = 0;
 static GLuint glScreenTexture = 0;
 static GLuint framebuffer;
 static GLuint renderbuffer;
+static CGRect lastBounds;
 #endif
 
 typedef struct gl_vertex {
@@ -78,7 +79,7 @@ int video_init() {
         pipelineDescriptor.fragmentFunction = [library newFunctionWithName:@"nes_fragment"];
         pipelineDescriptor.colorAttachments[0].pixelFormat = MTLPixelFormatBGRA8Unorm;
         
-        MTLTextureDescriptor *textureDescriptor = [MTLTextureDescriptor texture2DDescriptorWithPixelFormat:MTLPixelFormatRGBA8Unorm width:video_getwidth() height:video_getheight() mipmapped:NO];
+        MTLTextureDescriptor *textureDescriptor = [MTLTextureDescriptor texture2DDescriptorWithPixelFormat:MTLPixelFormatBGRA8Unorm width:video_getwidth() height:video_getheight() mipmapped:NO];
         
         float vertices[] = {
             -1.0, -1.0,
@@ -112,18 +113,6 @@ int video_init() {
             return 1;
         }
         
-        eaglLayer.bounds = (CGRect){CGPointZero, CGSizeMake(video_getwidth(), video_getheight())};
-        
-        glGenRenderbuffers(1, &renderbuffer);
-        glBindRenderbuffer(GL_RENDERBUFFER, renderbuffer);
-        [context renderbufferStorage:GL_RENDERBUFFER fromDrawable:eaglLayer];
-//        glBindRenderbuffer(GL_RENDERBUFFER, 0);
-        
-        glGenFramebuffers(1, &framebuffer);
-        glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
-        glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, renderbuffer);
-//        glBindFramebuffer(GL_FRAMEBUFFER, 0);
-        
         GLuint (^compile)(NSString *, GLenum) = ^(NSString *name, GLenum type) {
             NSString *path = [[NSBundle bundleForClass:[NESEmulator class]] pathForResource:name ofType:@"glsl"];
             NSString *string = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
@@ -151,6 +140,9 @@ int video_init() {
             return handle;
         };
 
+        glGenRenderbuffers(1, &renderbuffer);
+        glGenFramebuffers(1, &framebuffer);
+        
         GLuint vertexShader = compile(@"NESVertex", GL_VERTEX_SHADER);
         GLuint fragmentShader = compile(@"NESFragment", GL_FRAGMENT_SHADER);
         if (vertexShader == 0 || fragmentShader == 0)
@@ -180,10 +172,10 @@ int video_init() {
         textureUniform = glGetUniformLocation(program, "texture");
         
         const gl_vertex vertices[] = {
-            {{-1, -1, 0}, {0, 0}},
-            {{1, -1, 0}, {1, 0}},
-            {{-1, 1, 0}, {0, 1}},
-            {{1, 1, 0}, {1, 1}}
+            {{-1, -1, 0}, {0, 1}},
+            {{-1, 1, 0}, {0, 0}},
+            {{1, -1, 0}, {1, 1}},
+            {{1, 1, 0}, {1, 0}}
         };
         glGenBuffers(1, &glVertexBuffer);
         glBindBuffer(GL_ARRAY_BUFFER, glVertexBuffer);
@@ -291,9 +283,21 @@ void video_eagl_endframe() {
     
     glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
     glBindRenderbuffer(GL_RENDERBUFFER, renderbuffer);
-
-    CGRect bounds = emulator.layer.bounds;
-    glViewport(CGRectGetMinX(bounds), CGRectGetMinY(bounds), CGRectGetWidth(bounds), CGRectGetHeight(bounds));
+    
+    CAEAGLLayer *eaglLayer = (CAEAGLLayer *)emulator.layer;
+    CGRect bounds = eaglLayer.bounds;
+    CGFloat scale = eaglLayer.contentsScale;
+    
+    if (!CGRectEqualToRect(lastBounds, bounds)) {
+        glDeleteRenderbuffers(1, &renderbuffer);
+        glGenRenderbuffers(1, &renderbuffer);
+        glBindRenderbuffer(GL_RENDERBUFFER, renderbuffer);
+        [context renderbufferStorage:GL_RENDERBUFFER fromDrawable:eaglLayer];
+        glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, renderbuffer);
+        lastBounds = bounds;
+    }
+    
+    glViewport(CGRectGetMinX(bounds) * scale, CGRectGetMinY(bounds) * scale, CGRectGetWidth(bounds) * scale, CGRectGetHeight(bounds) * scale);
     
     glBindBuffer(GL_ARRAY_BUFFER, glVertexBuffer);
     glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, sizeof(gl_vertex), 0);
@@ -378,7 +382,7 @@ void video_setpalette(palette_t *p) {
     for (int j = 0; j < 8; j++) {
         for (int i = 0; i < 256; i++) {
             palentry_t *entry = &p->pal[j][i & 0x3F];
-            palette32[j][i] = (entry->r << 0) | (entry->g << 8) | (entry->b << 16);
+            palette32[j][i] = (entry->r << 16) | (entry->g << 8) | (entry->b << 0);
         }
     }
 }
