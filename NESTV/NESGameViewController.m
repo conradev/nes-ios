@@ -1,12 +1,13 @@
 //
-//  ViewController.m
-//  NES
+//  NESGameViewController.m
+//  NESTV
 //
-//  Created by Conrad Kramer on 4/23/15.
-//  Copyright (c) 2015 Kramer Software Productions, LLC. All rights reserved.
+//  Created by Conrad Kramer on 9/16/15.
+//  Copyright © 2015 Kramer Software Productions, LLC. All rights reserved.
 //
 
 #import <nesemu2/nesemu2.h>
+#import <GameController/GameController.h>
 
 #import "NESGameViewController.h"
 
@@ -15,12 +16,12 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        NSURL *applicationSupportURL = [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] firstObject];
-        NSURL *configURL = [applicationSupportURL URLByAppendingPathComponent:@"nesemu2.cfg"];
-        [[NSFileManager defaultManager] createDirectoryAtURL:applicationSupportURL withIntermediateDirectories:YES attributes:nil error:nil];
+        NSURL *temporaryDirectoryURL = [[NSURL fileURLWithPath:NSTemporaryDirectory()] URLByAppendingPathComponent:@"nesemu2"];
+        NSURL *configURL = [temporaryDirectoryURL URLByAppendingPathComponent:@"nesemu2.cfg"];
+        [[NSFileManager defaultManager] createDirectoryAtURL:temporaryDirectoryURL withIntermediateDirectories:YES attributes:nil error:nil];
         [[NSFileManager defaultManager] createFileAtPath:configURL.path contents:nil attributes:nil];
         
-        _emulator = [[NESEmulator alloc] initWithConfigurationURL:configURL dataDirectoryURL:applicationSupportURL];
+        _emulator = [[NESEmulator alloc] initWithConfigurationURL:configURL dataDirectoryURL:temporaryDirectoryURL];
     }
     return self;
 }
@@ -33,6 +34,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.emulator loadRomAtURL:[[NSBundle mainBundle] URLForResource:@"smb" withExtension:@"nes"]];
+    
+    // TODO: Handle controllers properly
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_emulator configureController:[[GCController controllers] firstObject] forPlayerAtIndex:GCControllerPlayerIndex1];
+    });
 }
 
 - (void)viewWillLayoutSubviews {

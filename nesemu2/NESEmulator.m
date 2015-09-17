@@ -9,7 +9,7 @@
 #import "NESAvailability.h"
 
 #import <UIKit/UIKit.h>
-
+#import <libkern/OSAtomic.h>
 #if METAL_ENABLED
 #import <Metal/Metal.h>
 #endif
@@ -73,6 +73,7 @@ static void emulator_log(char *str) {
         
         vars_t *paths = vars_from_dictionary(@{@"path.data": [[NSBundle bundleForClass:[self class]] pathForResource:@"data" ofType:nil],
                                                @"path.user": dataDirectoryURL.path});
+
         vars_merge(config, paths);
         vars_destroy(paths);
         
@@ -133,6 +134,73 @@ static void emulator_log(char *str) {
 - (void)unpause {
     emu_event(E_UNPAUSE, NULL);
 }
+
+#if __has_include(<GameController/GameController.h>)
+- (void)configureController:(GCController *)controller forPlayerAtIndex:(GCControllerPlayerIndex)index {
+    if (index == GCControllerPlayerIndexUnset)
+        return;
+    
+    __weak __typeof__(self) weakSelf = self;
+    void (^set)(NESControllerState, NESControllerState) = ^(NESControllerState state, NESControllerState mask) {
+        __strong __typeof__(weakSelf) strongSelf = weakSelf;
+        if (!strongSelf)
+            return;
+        
+        NESControllerState *player = NULL;
+        switch (index) {
+            case GCControllerPlayerIndex1:
+                player = &strongSelf->_player1;
+                break;
+            case GCControllerPlayerIndex2:
+                player = &strongSelf->_player2;
+                break;
+            case GCControllerPlayerIndex3:
+                player = &strongSelf->_player3;
+                break;
+            case GCControllerPlayerIndex4:
+                player = &strongSelf->_player4;
+                break;
+            default:
+                return;
+        }
+        
+        OSAtomicAnd32(~mask, player);
+        OSAtomicOr32(state, player);
+    };
+    
+    [controller setControllerPausedHandler:^(GCController *controller) {
+        set(NESControllerStateStart, NESControllerStateStart);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            set(0, NESControllerStateStart);
+        });
+    }];
+    [controller.microGamepad setValueChangedHandler:^(GCMicroGamepad *gamepad, GCControllerElement *element) {
+        GCControllerDirectionPad *dpad = gamepad.dpad;
+        
+        NESControllerState state = 0;
+        state |= (dpad.up.pressed ? NESControllerStateUp : 0);
+        state |= (dpad.down.pressed ? NESControllerStateDown : 0);
+        state |= (dpad.left.pressed ? NESControllerStateLeft : 0);
+        state |= (dpad.right.pressed ? NESControllerStateRight : 0);
+        state |= (gamepad.buttonA.pressed ? NESControllerStateA : 0);
+        state |= (gamepad.buttonX.pressed ? NESControllerStateB : 0);
+        set(state, ~(NESControllerStateSelect | NESControllerStateStart));
+    }];
+    [controller.gamepad setValueChangedHandler:^(GCGamepad *gamepad, GCControllerElement *element) {
+        GCControllerDirectionPad *dpad = gamepad.dpad;
+        
+        NESControllerState state = 0;
+        state |= (dpad.up.pressed ? NESControllerStateUp : 0);
+        state |= (dpad.down.pressed ? NESControllerStateDown : 0);
+        state |= (dpad.left.pressed ? NESControllerStateLeft : 0);
+        state |= (dpad.right.pressed ? NESControllerStateRight : 0);
+        state |= (gamepad.buttonA.pressed | gamepad.buttonY.pressed ? NESControllerStateA : 0);
+        state |= (gamepad.buttonB.pressed | gamepad.buttonX.pressed ? NESControllerStateB : 0);
+        set(state, ~(NESControllerStateSelect | NESControllerStateStart));
+    }];
+    [controller setPlayerIndex:index];
+}
+#endif
 
 - (void)log:(NSString *)line {
 

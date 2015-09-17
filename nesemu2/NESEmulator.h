@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
+#if __has_include(<GameController/GameController.h>)
+#import <GameController/GameController.h>
+#endif
 
-typedef NS_OPTIONS(UInt8, NESControllerState) {
+typedef NS_OPTIONS(UInt32, NESControllerState) {
     NESControllerStateA =      (1 << 0),
     NESControllerStateB =      (1 << 1),
     NESControllerStateSelect = (1 << 2),
@@ -40,5 +43,9 @@ typedef NS_OPTIONS(UInt8, NESControllerState) {
 
 - (void)pause;
 - (void)unpause;
+
+#if __has_include(<GameController/GameController.h>)
+- (void)configureController:(GCController *)controller forPlayerAtIndex:(GCControllerPlayerIndex)index;
+#endif
 
 @end

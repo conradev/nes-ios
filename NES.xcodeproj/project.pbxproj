@@ -269,7 +269,6 @@
 		D06F32151B37542500CC6B66 /* NESGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F32141B37542500CC6B66 /* NESGameViewController.m */; };
 		D078F7E41AEA163800F1AE49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D078F7E31AEA163800F1AE49 /* Images.xcassets */; };
 		D078F7E71AEA163800F1AE49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D078F7E51AEA163800F1AE49 /* LaunchScreen.xib */; };
-		D081CB7C1B1A78E100879BB2 /* NESGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = D081CB7B1B1A78E100879BB2 /* NESGameView.m */; };
 		D081CB7F1B1A828700879BB2 /* NESFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D081CB7D1B1A828700879BB2 /* NESFragment.glsl */; };
 		D081CB801B1A828700879BB2 /* NESVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D081CB7E1B1A828700879BB2 /* NESVertex.glsl */; };
 		D0931BB81AEAC0B700E467A7 /* cartdb.c in Sources */ = {isa = PBXBuildFile; fileRef = D09319F21AEAC0B700E467A7 /* cartdb.c */; };
@@ -497,6 +496,245 @@
 		D0B4A05A1B23C7C1003EE0B2 /* smb.nes in Resources */ = {isa = PBXBuildFile; fileRef = D0A71B4A1AEDD9D800830564 /* smb.nes */; };
 		D0B4A05B1B23C824003EE0B2 /* nesemu2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0612DDD1AEDCEA1005964A7 /* nesemu2.framework */; };
 		D0BEA2331B32A8000068F41F /* smb.nes in Resources */ = {isa = PBXBuildFile; fileRef = D0BEA2321B32A8000068F41F /* smb.nes */; };
+		D0F2B8361BAA3CAD004714FE /* ffv.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AAD1AEAC0B700E467A7 /* ffv.c */; };
+		D0F2B8371BAA3CAD004714FE /* contra-function-16.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A6D1AEAC0B700E467A7 /* contra-function-16.c */; };
+		D0F2B8381BAA3CAD004714FE /* rumblestation.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A851AEAC0B700E467A7 /* rumblestation.c */; };
+		D0F2B8391BAA3CAD004714FE /* taito-tc0190fmc.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AC61AEAC0B700E467A7 /* taito-tc0190fmc.c */; };
+		D0F2B83A1BAA3CAD004714FE /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AF61AEAC0B700E467A7 /* log.c */; };
+		D0F2B83B1BAA3CAD004714FE /* tqrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A521AEAC0B700E467A7 /* tqrom.c */; };
+		D0F2B83C1BAA3CAD004714FE /* bxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A431AEAC0B700E467A7 /* bxrom.c */; };
+		D0F2B83D1BAA3CAD004714FE /* 163.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A3E1AEAC0B700E467A7 /* 163.c */; };
+		D0F2B83E1BAA3CAD004714FE /* sunsoft-4.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A9D1AEAC0B700E467A7 /* sunsoft-4.c */; };
+		D0F2B83F1BAA3CAD004714FE /* paths.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AFC1AEAC0B700E467A7 /* paths.c */; };
+		D0F2B8401BAA3CAD004714FE /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B5A1AEAC0B700E467A7 /* state.c */; };
+		D0F2B8411BAA3CAD004714FE /* superhik4in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A751AEAC0B700E467A7 /* superhik4in1.c */; };
+		D0F2B8421BAA3CAD004714FE /* vrc2.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A381AEAC0B700E467A7 /* vrc2.c */; };
+		D0F2B8431BAA3CAD004714FE /* ines20.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AD81AEAC0B700E467A7 /* ines20.c */; };
+		D0F2B8441BAA3CAD004714FE /* general.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A0B1AEAC0B700E467A7 /* general.c */; };
+		D0F2B8451BAA3CAD004714FE /* 65in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A671AEAC0B700E467A7 /* 65in1.c */; };
+		D0F2B8461BAA3CAD004714FE /* stricmp.c in Sources */ = {isa = PBXBuildFile; fileRef = D0612DD61AEDCE42005964A7 /* stricmp.c */; };
+		D0F2B8471BAA3CAD004714FE /* vram.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AD11AEAC0B700E467A7 /* vram.c */; };
+		D0F2B8481BAA3CAD004714FE /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931CC91AEAC56A00E467A7 /* cpu.c */; };
+		D0F2B8491BAA3CAD004714FE /* joypad1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A171AEAC0B700E467A7 /* joypad1.c */; };
+		D0F2B84A1BAA3CAD004714FE /* step.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B521AEAC0B700E467A7 /* step.c */; };
+		D0F2B84B1BAA3CAD004714FE /* history.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AF41AEAC0B700E467A7 /* history.c */; };
+		D0F2B84C1BAA3CAD004714FE /* s_FME7.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AE41AEAC0B700E467A7 /* s_FME7.c */; };
+		D0F2B84D1BAA3CAD004714FE /* mario1-malee2.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A791AEAC0B700E467A7 /* mario1-malee2.c */; };
+		D0F2B84E1BAA3CAD004714FE /* ks202.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A351AEAC0B700E467A7 /* ks202.c */; };
+		D0F2B84F1BAA3CAD004714FE /* qj.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A501AEAC0B700E467A7 /* qj.c */; };
+		D0F2B8501BAA3CAD004714FE /* sunsoft-3.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A9C1AEAC0B700E467A7 /* sunsoft-3.c */; };
+		D0F2B8511BAA3CAD004714FE /* cart.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B181AEAC0B700E467A7 /* cart.c */; };
+		D0F2B8521BAA3CAD004714FE /* sa-003x.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A921AEAC0B700E467A7 /* sa-003x.c */; };
+		D0F2B8531BAA3CAD004714FE /* vrc3.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A391AEAC0B700E467A7 /* vrc3.c */; };
+		D0F2B8541BAA3CAD004714FE /* fsb.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A261AEAC0B700E467A7 /* fsb.c */; };
+		D0F2B8551BAA3CAD004714FE /* caltron6in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A591AEAC0B700E467A7 /* caltron6in1.c */; };
+		D0F2B8561BAA3CAD004714FE /* tw.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AAB1AEAC0B700E467A7 /* tw.c */; };
+		D0F2B8571BAA3CAD004714FE /* 22211.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA81AEAC0B700E467A7 /* 22211.c */; };
+		D0F2B8581BAA3CAD004714FE /* x1-005.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA21AEAC0B700E467A7 /* x1-005.c */; };
+		D0F2B8591BAA3CAD004714FE /* asder.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A581AEAC0B700E467A7 /* asder.c */; };
+		D0F2B85A1BAA3CAD004714FE /* memutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AFA1AEAC0B700E467A7 /* memutil.c */; };
+		D0F2B85B1BAA3CAD004714FE /* biomiraclea.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A781AEAC0B700E467A7 /* biomiraclea.c */; };
+		D0F2B85C1BAA3CAD004714FE /* 1200in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A5E1AEAC0B700E467A7 /* 1200in1.c */; };
+		D0F2B85D1BAA3CAD004714FE /* cprom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A461AEAC0B700E467A7 /* cprom.c */; };
+		D0F2B85E1BAA3CAD004714FE /* strutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B011AEAC0B700E467A7 /* strutil.c */; };
+		D0F2B85F1BAA3CAD004714FE /* type-d.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AB01AEAC0B700E467A7 /* type-d.c */; };
+		D0F2B8601BAA3CAD004714FE /* namcot-108.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AC01AEAC0B700E467A7 /* namcot-108.c */; };
+		D0F2B8611BAA3CAD004714FE /* 74ls374n.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A901AEAC0B700E467A7 /* 74ls374n.c */; };
+		D0F2B8621BAA3CAD004714FE /* shlz.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A271AEAC0B700E467A7 /* shlz.c */; };
+		D0F2B8631BAA3CAD004714FE /* active.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A5C1AEAC0B700E467A7 /* active.c */; };
+		D0F2B8641BAA3CAD004714FE /* opencorp.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A841AEAC0B700E467A7 /* opencorp.c */; };
+		D0F2B8651BAA3CAD004714FE /* mimic-1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA51AEAC0B700E467A7 /* mimic-1.c */; };
+		D0F2B8661BAA3CAD004714FE /* sh2.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AAF1AEAC0B700E467A7 /* sh2.c */; };
+		D0F2B8671BAA3CAD004714FE /* supergk.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A741AEAC0B700E467A7 /* supergk.c */; };
+		D0F2B8681BAA3CAD004714FE /* disassemble.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B2F1AEAC0B700E467A7 /* disassemble.c */; };
+		D0F2B8691BAA3CAD004714FE /* tam-s1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A2F1AEAC0B700E467A7 /* tam-s1.c */; };
+		D0F2B86A1BAA3CAD004714FE /* tepples.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A2B1AEAC0B700E467A7 /* tepples.c */; };
+		D0F2B86B1BAA3CAD004714FE /* rambo-1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA61AEAC0B700E467A7 /* rambo-1.c */; };
+		D0F2B86C1BAA3CAD004714FE /* s_FDS.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AE21AEAC0B700E467A7 /* s_FDS.c */; };
+		D0F2B86D1BAA3CAD004714FE /* jf11.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A311AEAC0B700E467A7 /* jf11.c */; };
+		D0F2B86E1BAA3CAD004714FE /* super42in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A721AEAC0B700E467A7 /* super42in1.c */; };
+		D0F2B86F1BAA3CAD004714FE /* slre.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AFF1AEAC0B700E467A7 /* slre.c */; };
+		D0F2B8701BAA3CAD004714FE /* nes.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A0C1AEAC0B700E467A7 /* nes.c */; };
+		D0F2B8711BAA3CAD004714FE /* 72in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A691AEAC0B700E467A7 /* 72in1.c */; };
+		D0F2B8721BAA3CAD004714FE /* tca01.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A951AEAC0B700E467A7 /* tca01.c */; };
+		D0F2B8731BAA3CAD004714FE /* big7in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A6C1AEAC0B700E467A7 /* big7in1.c */; };
+		D0F2B8741BAA3CAD004714FE /* nitra.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A831AEAC0B700E467A7 /* nitra.c */; };
+		D0F2B8751BAA3CAD004714FE /* sa-7200x.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A941AEAC0B700E467A7 /* sa-7200x.c */; };
+		D0F2B8761BAA3CAD004714FE /* tc-112.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A5A1AEAC0B700E467A7 /* tc-112.c */; };
+		D0F2B8771BAA3CAD004714FE /* hle.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AD51AEAC0B700E467A7 /* hle.c */; };
+		D0F2B8781BAA3CAD004714FE /* sachen-8259.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AC41AEAC0B700E467A7 /* sachen-8259.c */; };
+		D0F2B8791BAA3CAD004714FE /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B581AEAC0B700E467A7 /* block.c */; };
+		D0F2B87A1BAA3CAD004714FE /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ACC1AEAC0B700E467A7 /* misc.c */; };
+		D0F2B87B1BAA3CAD004714FE /* vars.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B031AEAC0B700E467A7 /* vars.c */; };
+		D0F2B87C1BAA3CAD004714FE /* nrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A4D1AEAC0B700E467A7 /* nrom.c */; };
+		D0F2B87D1BAA3CAD004714FE /* ppu.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ACE1AEAC0B700E467A7 /* ppu.c */; };
+		D0F2B87E1BAA3CAD004714FE /* un1rom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A541AEAC0B700E467A7 /* un1rom.c */; };
+		D0F2B87F1BAA3CAD004714FE /* s_N106.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AE81AEAC0B700E467A7 /* s_N106.c */; };
+		D0F2B8801BAA3CAD004714FE /* patch.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B251AEAC0B700E467A7 /* patch.c */; };
+		D0F2B8811BAA3CAD004714FE /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AD01AEAC0B700E467A7 /* vector.c */; };
+		D0F2B8821BAA3CAD004714FE /* txrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A531AEAC0B700E467A7 /* txrom.c */; };
+		D0F2B8831BAA3CAD004714FE /* ines.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B1C1AEAC0B700E467A7 /* ines.c */; };
+		D0F2B8841BAA3CAD004714FE /* vrc4.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A3A1AEAC0B700E467A7 /* vrc4.c */; };
+		D0F2B8851BAA3CAD004714FE /* type-h.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AB11AEAC0B700E467A7 /* type-h.c */; };
+		D0F2B8861BAA3CAD004714FE /* unif.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AEE1AEAC0B700E467A7 /* unif.c */; };
+		D0F2B8871BAA3CAD004714FE /* xmlrole.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A001AEAC0B700E467A7 /* xmlrole.c */; };
+		D0F2B8881BAA3CAD004714FE /* mario7in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A701AEAC0B700E467A7 /* mario7in1.c */; };
+		D0F2B8891BAA3CAD004714FE /* pxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A4F1AEAC0B700E467A7 /* pxrom.c */; };
+		D0F2B88A1BAA3CAD004714FE /* vrc6.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A3B1AEAC0B700E467A7 /* vrc6.c */; };
+		D0F2B88B1BAA3CAD004714FE /* namcot-163.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AC21AEAC0B700E467A7 /* namcot-163.c */; };
+		D0F2B88C1BAA3CAD004714FE /* fxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A4A1AEAC0B700E467A7 /* fxrom.c */; };
+		D0F2B88D1BAA3CAD004714FE /* colordreams.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A7C1AEAC0B700E467A7 /* colordreams.c */; };
+		D0F2B88E1BAA3CAD004714FE /* ss88006.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A331AEAC0B700E467A7 /* ss88006.c */; };
+		D0F2B88F1BAA3CAD004714FE /* magicfloor.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A2A1AEAC0B700E467A7 /* magicfloor.c */; };
+		D0F2B8901BAA3CAD004714FE /* sa-0161m.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A931AEAC0B700E467A7 /* sa-0161m.c */; };
+		D0F2B8911BAA3CAD004714FE /* superlionking.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A8A1AEAC0B700E467A7 /* superlionking.c */; };
+		D0F2B8921BAA3CAD004714FE /* unif.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B291AEAC0B700E467A7 /* unif.c */; };
+		D0F2B8931BAA3CAD004714FE /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AF01AEAC0B700E467A7 /* config.c */; };
+		D0F2B8941BAA3CAD004714FE /* gxrom_mxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A4B1AEAC0B700E467A7 /* gxrom_mxrom.c */; };
+		D0F2B8951BAA3CAD004714FE /* powerpad.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A191AEAC0B700E467A7 /* powerpad.c */; };
+		D0F2B8961BAA3CAD004714FE /* superhikXin1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A761AEAC0B700E467A7 /* superhikXin1.c */; };
+		D0F2B8971BAA3CAD004714FE /* disk.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ACA1AEAC0B700E467A7 /* disk.c */; };
+		D0F2B8981BAA3CAD004714FE /* 35in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A651AEAC0B700E467A7 /* 35in1.c */; };
+		D0F2B8991BAA3CAD004714FE /* smb2b.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A7B1AEAC0B700E467A7 /* smb2b.c */; };
+		D0F2B89A1BAA3CAD004714FE /* bf909x.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A221AEAC0B700E467A7 /* bf909x.c */; };
+		D0F2B89B1BAA3CAD004714FE /* 70in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A681AEAC0B700E467A7 /* 70in1.c */; };
+		D0F2B89C1BAA3CAD004714FE /* bitcorp.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A871AEAC0B700E467A7 /* bitcorp.c */; };
+		D0F2B89D1BAA3CAD004714FE /* 8259x.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A911AEAC0B700E467A7 /* 8259x.c */; };
+		D0F2B89E1BAA3CAD004714FE /* vrc1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A371AEAC0B700E467A7 /* vrc1.c */; };
+		D0F2B89F1BAA3CAD004714FE /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A481AEAC0B700E467A7 /* event.c */; };
+		D0F2B8A01BAA3CAD004714FE /* magicseries.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A811AEAC0B700E467A7 /* magicseries.c */; };
+		D0F2B8A11BAA3CAD004714FE /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B481AEAC0B700E467A7 /* io.c */; };
+		D0F2B8A21BAA3CAD004714FE /* 34x3.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A401AEAC0B700E467A7 /* 34x3.c */; };
+		D0F2B8A31BAA3CAD004714FE /* ups.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B271AEAC0B700E467A7 /* ups.c */; };
+		D0F2B8A41BAA3CAD004714FE /* tcu01.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A961AEAC0B700E467A7 /* tcu01.c */; };
+		D0F2B8A51BAA3CAD004714FE /* ips.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B231AEAC0B700E467A7 /* ips.c */; };
+		D0F2B8A61BAA3CAD004714FE /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AF21AEAC0B700E467A7 /* crc32.c */; };
+		D0F2B8A71BAA3CAD004714FE /* zapper.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A1A1AEAC0B700E467A7 /* zapper.c */; };
+		D0F2B8A81BAA3CAD004714FE /* s_VRC6.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AEA1AEAC0B700E467A7 /* s_VRC6.c */; };
+		D0F2B8A91BAA3CAD004714FE /* sunsoft-5b.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A9E1AEAC0B700E467A7 /* sunsoft-5b.c */; };
+		D0F2B8AA1BAA3CAD004714FE /* reset4in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A711AEAC0B700E467A7 /* reset4in1.c */; };
+		D0F2B8AB1BAA3CAD004714FE /* mmc2.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AB81AEAC0B700E467A7 /* mmc2.c */; };
+		D0F2B8AC1BAA3CAD004714FE /* ballgames11in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A6B1AEAC0B700E467A7 /* ballgames11in1.c */; };
+		D0F2B8AD1BAA3CAD004714FE /* sgz.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AAE1AEAC0B700E467A7 /* sgz.c */; };
+		D0F2B8AE1BAA3CAD004714FE /* commands.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A0D1AEAC0B700E467A7 /* commands.c */; };
+		D0F2B8AF1BAA3CAD004714FE /* nanjing.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A821AEAC0B700E467A7 /* nanjing.c */; };
+		D0F2B8B01BAA3CAD004714FE /* nsf.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B201AEAC0B700E467A7 /* nsf.c */; };
+		D0F2B8B11BAA3CAD004714FE /* mmc3.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ABA1AEAC0B700E467A7 /* mmc3.c */; };
+		D0F2B8B21BAA3CAD004714FE /* 36in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A661AEAC0B700E467A7 /* 36in1.c */; };
+		D0F2B8B31BAA3CAD004714FE /* hosenkan.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A7F1AEAC0B700E467A7 /* hosenkan.c */; };
+		D0F2B8B41BAA3CAD004714FE /* tc0190fmc_pal16r4.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA11AEAC0B700E467A7 /* tc0190fmc_pal16r4.c */; };
+		D0F2B8B51BAA3CAD004714FE /* pads.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ACD1AEAC0B700E467A7 /* pads.c */; };
+		D0F2B8B61BAA3CAD004714FE /* fds.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AD31AEAC0B700E467A7 /* fds.c */; };
+		D0F2B8B71BAA3CAD004714FE /* vrc7.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A3C1AEAC0B700E467A7 /* vrc7.c */; };
+		D0F2B8B81BAA3CAD004714FE /* palette.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B5F1AEAC0B700E467A7 /* palette.c */; };
+		D0F2B8B91BAA3CAD004714FE /* fk23c.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A6E1AEAC0B700E467A7 /* fk23c.c */; };
+		D0F2B8BA1BAA3CAD004714FE /* dbz5.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A8D1AEAC0B700E467A7 /* dbz5.c */; };
+		D0F2B8BB1BAA3CAD004714FE /* jf16.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A321AEAC0B700E467A7 /* jf16.c */; };
+		D0F2B8BC1BAA3CAD004714FE /* apu.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B071AEAC0B700E467A7 /* apu.c */; };
+		D0F2B8BD1BAA3CAD004714FE /* h2288.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A881AEAC0B700E467A7 /* h2288.c */; };
+		D0F2B8BE1BAA3CAD004714FE /* nsf.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ADE1AEAC0B700E467A7 /* nsf.c */; };
+		D0F2B8BF1BAA3CAD004714FE /* studygame.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A981AEAC0B700E467A7 /* studygame.c */; };
+		D0F2B8C01BAA3CAD004714FE /* latch.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AB41AEAC0B700E467A7 /* latch.c */; };
+		D0F2B8C11BAA3CAD004714FE /* deathrace.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A7D1AEAC0B700E467A7 /* deathrace.c */; };
+		D0F2B8C21BAA3CAD004714FE /* 20in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A611AEAC0B700E467A7 /* 20in1.c */; };
+		D0F2B8C31BAA3CAD004714FE /* uy.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A8B1AEAC0B700E467A7 /* uy.c */; };
+		D0F2B8C41BAA3CAD004714FE /* s_MMC5.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AE61AEAC0B700E467A7 /* s_MMC5.c */; };
+		D0F2B8C51BAA3CAD004714FE /* fds.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B1A1AEAC0B700E467A7 /* fds.c */; };
+		D0F2B8C61BAA3CAD004714FE /* nina-006.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A201AEAC0B700E467A7 /* nina-006.c */; };
+		D0F2B8C71BAA3CAD004714FE /* events.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A111AEAC0B700E467A7 /* events.c */; };
+		D0F2B8C81BAA3CAD004714FE /* h3001.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A2D1AEAC0B700E467A7 /* h3001.c */; };
+		D0F2B8C91BAA3CAD004714FE /* ppu.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B491AEAC0B700E467A7 /* ppu.c */; };
+		D0F2B8CA1BAA3CAD004714FE /* joypad0.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A161AEAC0B700E467A7 /* joypad0.c */; };
+		D0F2B8CB1BAA3CAD004714FE /* x1-017.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA31AEAC0B700E467A7 /* x1-017.c */; };
+		D0F2B8CC1BAA3CAD004714FE /* 21in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A621AEAC0B700E467A7 /* 21in1.c */; };
+		D0F2B8CD1BAA3CAD004714FE /* xmltok.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A021AEAC0B700E467A7 /* xmltok.c */; };
+		D0F2B8CE1BAA3CAD004714FE /* sxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A511AEAC0B700E467A7 /* sxrom.c */; };
+		D0F2B8CF1BAA3CAD004714FE /* zs.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AB21AEAC0B700E467A7 /* zs.c */; };
+		D0F2B8D01BAA3CAD004714FE /* 15in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A601AEAC0B700E467A7 /* 15in1.c */; };
+		D0F2B8D11BAA3CAD004714FE /* 3425.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A3F1AEAC0B700E467A7 /* 3425.c */; };
+		D0F2B8D21BAA3CAD004714FE /* holydiver.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A2E1AEAC0B700E467A7 /* holydiver.c */; };
+		D0F2B8D31BAA3CAD004714FE /* mmc1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AB61AEAC0B700E467A7 /* mmc1.c */; };
+		D0F2B8D41BAA3CAD004714FE /* sunsoft-1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A9A1AEAC0B700E467A7 /* sunsoft-1.c */; };
+		D0F2B8D51BAA3CAD004714FE /* cnrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A441AEAC0B700E467A7 /* cnrom.c */; };
+		D0F2B8D61BAA3CAD004714FE /* null.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A181AEAC0B700E467A7 /* null.c */; };
+		D0F2B8D71BAA3CAD004714FE /* hes.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A7E1AEAC0B700E467A7 /* hes.c */; };
+		D0F2B8D81BAA3CAD004714FE /* unrom_74hc08.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A551AEAC0B700E467A7 /* unrom_74hc08.c */; };
+		D0F2B8D91BAA3CAD004714FE /* dripgame.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A291AEAC0B700E467A7 /* dripgame.c */; };
+		D0F2B8DA1BAA3CAD004714FE /* ines20.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B1E1AEAC0B700E467A7 /* ines20.c */; };
+		D0F2B8DB1BAA3CAD004714FE /* dxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A471AEAC0B700E467A7 /* dxrom.c */; };
+		D0F2B8DC1BAA3CAD004714FE /* s_DRIP.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AE01AEAC0B700E467A7 /* s_DRIP.c */; };
+		D0F2B8DD1BAA3CAD004714FE /* xmlparse.c in Sources */ = {isa = PBXBuildFile; fileRef = D09319FF1AEAC0B700E467A7 /* xmlparse.c */; };
+		D0F2B8DE1BAA3CAD004714FE /* region.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B551AEAC0B700E467A7 /* region.c */; };
+		D0F2B8DF1BAA3CAD004714FE /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B411AEAC0B700E467A7 /* memory.c */; };
+		D0F2B8E01BAA3CAD004714FE /* inputdev.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A141AEAC0B700E467A7 /* inputdev.c */; };
+		D0F2B8E11BAA3CAD004714FE /* goldengame260in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A6F1AEAC0B700E467A7 /* goldengame260in1.c */; };
+		D0F2B8E21BAA3CAD004714FE /* goldenfive.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A231AEAC0B700E467A7 /* goldenfive.c */; };
+		D0F2B8E31BAA3CAD004714FE /* cnrom_cp.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A451AEAC0B700E467A7 /* cnrom_cp.c */; };
+		D0F2B8E41BAA3CAD004714FE /* pikachuy2k.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A7A1AEAC0B700E467A7 /* pikachuy2k.c */; };
+		D0F2B8E51BAA3CAD004714FE /* axrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A421AEAC0B700E467A7 /* axrom.c */; };
+		D0F2B8E61BAA3CAD004714FE /* d-1012.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A1E1AEAC0B700E467A7 /* d-1012.c */; };
+		D0F2B8E71BAA3CAD004714FE /* super700in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A731AEAC0B700E467A7 /* super700in1.c */; };
+		D0F2B8E81BAA3CAD004714FE /* nes.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B451AEAC0B700E467A7 /* nes.c */; };
+		D0F2B8E91BAA3CAD004714FE /* 76in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A6A1AEAC0B700E467A7 /* 76in1.c */; };
+		D0F2B8EA1BAA3CAD004714FE /* sunsoft-2.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A9B1AEAC0B700E467A7 /* sunsoft-2.c */; };
+		D0F2B8EB1BAA3CAD004714FE /* hxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A4C1AEAC0B700E467A7 /* hxrom.c */; };
+		D0F2B8EC1BAA3CAD004714FE /* pal_zz.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A4E1AEAC0B700E467A7 /* pal_zz.c */; };
+		D0F2B8ED1BAA3CAD004714FE /* strikewolf.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AAA1AEAC0B700E467A7 /* strikewolf.c */; };
+		D0F2B8EE1BAA3CAD004714FE /* sl1632.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A8E1AEAC0B700E467A7 /* sl1632.c */; };
+		D0F2B8EF1BAA3CAD004714FE /* mappers.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ADB1AEAC0B700E467A7 /* mappers.c */; };
+		D0F2B8F01BAA3CAD004714FE /* 31in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A641AEAC0B700E467A7 /* 31in1.c */; };
+		D0F2B8F11BAA3CAD004714FE /* racermate.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A891AEAC0B700E467A7 /* racermate.c */; };
+		D0F2B8F21BAA3CAD004714FE /* xmltok_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A041AEAC0B700E467A7 /* xmltok_impl.c */; };
+		D0F2B8F31BAA3CAD004714FE /* mmc5.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ABE1AEAC0B700E467A7 /* mmc5.c */; };
+		D0F2B8F41BAA3CAD004714FE /* mmc4.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ABC1AEAC0B700E467A7 /* mmc4.c */; };
+		D0F2B8F51BAA3CAD004714FE /* 22in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A631AEAC0B700E467A7 /* 22in1.c */; };
+		D0F2B8F61BAA3CAD004714FE /* ines.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AD71AEAC0B700E467A7 /* ines.c */; };
+		D0F2B8F71BAA3CAD004714FE /* nina-001.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A1F1AEAC0B700E467A7 /* nina-001.c */; };
+		D0F2B8F81BAA3CAD004714FE /* cartdb.c in Sources */ = {isa = PBXBuildFile; fileRef = D09319F21AEAC0B700E467A7 /* cartdb.c */; };
+		D0F2B8F91BAA3CAD004714FE /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B3F1AEAC0B700E467A7 /* io.c */; };
+		D0F2B8FA1BAA3CAD004714FE /* tilecache.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B531AEAC0B700E467A7 /* tilecache.c */; };
+		D0F2B8FB1BAA3CAD004714FE /* movie.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B431AEAC0B700E467A7 /* movie.c */; };
+		D0F2B8FC1BAA3CAD004714FE /* generator.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B5D1AEAC0B700E467A7 /* generator.c */; };
+		D0F2B8FD1BAA3CAD004714FE /* emu.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A0F1AEAC0B700E467A7 /* emu.c */; };
+		D0F2B8FE1BAA3CAD004714FE /* diskutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ACB1AEAC0B700E467A7 /* diskutil.c */; };
+		D0F2B8FF1BAA3CAD004714FE /* memfile.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AF81AEAC0B700E467A7 /* memfile.c */; };
+		D0F2B9001BAA3CAD004714FE /* tc0190fmc.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA01AEAC0B700E467A7 /* tc0190fmc.c */; };
+		D0F2B9011BAA3CAD004714FE /* 150in1.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A5F1AEAC0B700E467A7 /* 150in1.c */; };
+		D0F2B9021BAA3CAD004714FE /* kasing.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A801AEAC0B700E467A7 /* kasing.c */; };
+		D0F2B9031BAA3CAD004714FE /* uxrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A561AEAC0B700E467A7 /* uxrom.c */; };
+		D0F2B9041BAA3CAD004714FE /* s_VRC7.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AEC1AEAC0B700E467A7 /* s_VRC7.c */; };
+		D0F2B9051BAA3CAD004714FE /* mxmdhtwo.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931AA91AEAC0B700E467A7 /* mxmdhtwo.c */; };
+		D0F2B9061BAA3CAD004714FE /* decathlon.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A251AEAC0B700E467A7 /* decathlon.c */; };
+		D0F2B9071BAA3CAD004714FE /* exrom.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A491AEAC0B700E467A7 /* exrom.c */; };
+		D0F2B9081BAA3CAD004714FE /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A071AEAC0B700E467A7 /* parser.c */; };
+		D0F2B9091BAA3CAD004714FE /* genie.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931B3D1AEAC0B700E467A7 /* genie.c */; };
+		D0F2B90A1BAA3CAD004714FE /* xmltok_ns.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931A061AEAC0B700E467A7 /* xmltok_ns.c */; };
+		D0F2B90B1BAA3CAD004714FE /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = D0931ACF1AEAC0B700E467A7 /* util.c */; };
+		D0F2B91A1BAA3F56004714FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F2B9191BAA3F56004714FE /* main.m */; };
+		D0F2B91D1BAA3F56004714FE /* NESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F2B91C1BAA3F56004714FE /* NESAppDelegate.m */; };
+		D0F2B9201BAA3F56004714FE /* NESGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F2B91F1BAA3F56004714FE /* NESGameViewController.m */; };
+		D0F2B9251BAA3F56004714FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F2B9241BAA3F56004714FE /* Images.xcassets */; };
+		D0F2B92C1BAA4129004714FE /* NESShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0582E2F1B19BAD50004BD5B /* NESShaders.metal */; };
+		D0F2B92D1BAA4129004714FE /* NESSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = D033CD1B1B2D3C2C00B4C7F1 /* NESSystem.m */; };
+		D0F2B92E1BAA4129004714FE /* NESVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0582E291B19B1770004BD5B /* NESVideo.m */; };
+		D0F2B92F1BAA4129004714FE /* NESInput.m in Sources */ = {isa = PBXBuildFile; fileRef = D033CD231B2D3D0600B4C7F1 /* NESInput.m */; };
+		D0F2B9301BAA4129004714FE /* NESEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0612DD01AEDC770005964A7 /* NESEmulator.m */; };
+		D0F2B9311BAA4129004714FE /* NESSound.m in Sources */ = {isa = PBXBuildFile; fileRef = D033CD1F1B2D3CBE00B4C7F1 /* NESSound.m */; };
+		D0F2B9331BAA4129004714FE /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01E63451B8C3EA0000E9A27 /* Metal.framework */; };
+		D0F2B9341BAA4129004714FE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01E63431B8C3E9B000E9A27 /* OpenGLES.framework */; };
+		D0F2B9351BAA4129004714FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A2A3CB1B32A18A004A1D59 /* UIKit.framework */; };
+		D0F2B9361BAA4129004714FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01E63401B8C3802000E9A27 /* CoreGraphics.framework */; };
+		D0F2B9371BAA4129004714FE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01E633E1B8C37FD000E9A27 /* QuartzCore.framework */; };
+		D0F2B9381BAA4129004714FE /* libnesemu2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D09319D91AEAC05F00E467A7 /* libnesemu2.a */; };
+		D0F2B93A1BAA4129004714FE /* NESEmulator.h in Headers */ = {isa = PBXBuildFile; fileRef = D0612DCF1AEDC770005964A7 /* NESEmulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0F2B93B1BAA4129004714FE /* NESAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = D01A3FAE1B325D90008D5F87 /* NESAvailability.h */; };
+		D0F2B93C1BAA4129004714FE /* nesemu2.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A71B451AEDD10200830564 /* nesemu2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0F2B93E1BAA4129004714FE /* data in Resources */ = {isa = PBXBuildFile; fileRef = D0582E2D1B19B73A0004BD5B /* data */; };
+		D0F2B93F1BAA4129004714FE /* NESFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D081CB7D1B1A828700879BB2 /* NESFragment.glsl */; };
+		D0F2B9401BAA4129004714FE /* NESVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D081CB7E1B1A828700879BB2 /* NESVertex.glsl */; };
+		D0F2B9461BAA41AD004714FE /* nesemu2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F2B9441BAA4129004714FE /* nesemu2.framework */; };
+		D0F2B94D1BAA43AB004714FE /* smb.nes in Resources */ = {isa = PBXBuildFile; fileRef = D0F2B94C1BAA43AB004714FE /* smb.nes */; };
+		D0F2B9501BAA5A08004714FE /* nesemu2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0F2B9441BAA4129004714FE /* nesemu2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -597,6 +835,26 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0F2B90D1BAA3CAD004714FE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B94E1BAA59DB004714FE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D0F2B9501BAA5A08004714FE /* nesemu2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -641,8 +899,6 @@
 		D078F7DE1AEA163800F1AE49 /* NESGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESGameViewController.m; sourceTree = "<group>"; };
 		D078F7E31AEA163800F1AE49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D078F7E61AEA163800F1AE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D081CB7A1B1A78E100879BB2 /* NESGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESGameView.h; sourceTree = "<group>"; };
-		D081CB7B1B1A78E100879BB2 /* NESGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESGameView.m; sourceTree = "<group>"; };
 		D081CB7D1B1A828700879BB2 /* NESFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NESFragment.glsl; sourceTree = "<group>"; };
 		D081CB7E1B1A828700879BB2 /* NESVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NESVertex.glsl; sourceTree = "<group>"; };
 		D09319D91AEAC05F00E467A7 /* libnesemu2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnesemu2.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -974,6 +1230,17 @@
 		D0B4A04E1B23C6DB003EE0B2 /* NESTodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NESTodayViewController.h; sourceTree = "<group>"; };
 		D0B4A04F1B23C6DB003EE0B2 /* NESTodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESTodayViewController.m; sourceTree = "<group>"; };
 		D0BEA2321B32A8000068F41F /* smb.nes */ = {isa = PBXFileReference; lastKnownFileType = file; name = smb.nes; path = ../../../Downloads/smb.nes; sourceTree = "<group>"; };
+		D0F2B9111BAA3CAD004714FE /* libnesemu2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnesemu2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F2B9161BAA3F56004714FE /* NES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F2B9191BAA3F56004714FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0F2B91B1BAA3F56004714FE /* NESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NESAppDelegate.h; sourceTree = "<group>"; };
+		D0F2B91C1BAA3F56004714FE /* NESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESAppDelegate.m; sourceTree = "<group>"; };
+		D0F2B91E1BAA3F56004714FE /* NESGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NESGameViewController.h; sourceTree = "<group>"; };
+		D0F2B91F1BAA3F56004714FE /* NESGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESGameViewController.m; sourceTree = "<group>"; };
+		D0F2B9241BAA3F56004714FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0F2B9261BAA3F56004714FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F2B9441BAA4129004714FE /* nesemu2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nesemu2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F2B94C1BAA43AB004714FE /* smb.nes */ = {isa = PBXFileReference; lastKnownFileType = file; name = smb.nes; path = ../../../Downloads/smb.nes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1039,6 +1306,34 @@
 				D01E63481B8C3EC1000E9A27 /* UIKit.framework in Frameworks */,
 				D01E63491B8C3ECB000E9A27 /* CoreGraphics.framework in Frameworks */,
 				D0B4A05B1B23C824003EE0B2 /* nesemu2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B90C1BAA3CAD004714FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B9131BAA3F56004714FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B9461BAA41AD004714FE /* nesemu2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B9321BAA4129004714FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B9331BAA4129004714FE /* Metal.framework in Frameworks */,
+				D0F2B9341BAA4129004714FE /* OpenGLES.framework in Frameworks */,
+				D0F2B9351BAA4129004714FE /* UIKit.framework in Frameworks */,
+				D0F2B9361BAA4129004714FE /* CoreGraphics.framework in Frameworks */,
+				D0F2B9371BAA4129004714FE /* QuartzCore.framework in Frameworks */,
+				D0F2B9381BAA4129004714FE /* libnesemu2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,6 +1412,7 @@
 			isa = PBXGroup;
 			children = (
 				D078F7D51AEA163800F1AE49 /* NES */,
+				D0F2B9171BAA3F56004714FE /* NESTV */,
 				D0B4A04B1B23C6DB003EE0B2 /* NESWidget */,
 				D01A3E8D1B32520A008D5F87 /* NESWatch */,
 				D09319DA1AEAC05F00E467A7 /* nesemu2 */,
@@ -1136,6 +1432,9 @@
 				D01A3E981B32520A008D5F87 /* NESWatch.appex */,
 				D01A3EB71B3254CD008D5F87 /* libnesemu2.a */,
 				D01A3F9B1B325A4C008D5F87 /* nesemu2.framework */,
+				D0F2B9111BAA3CAD004714FE /* libnesemu2.a */,
+				D0F2B9161BAA3F56004714FE /* NES.app */,
+				D0F2B9441BAA4129004714FE /* nesemu2.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1147,8 +1446,6 @@
 				D078F7DB1AEA163800F1AE49 /* NESAppDelegate.m */,
 				D078F7DD1AEA163800F1AE49 /* NESGameViewController.h */,
 				D078F7DE1AEA163800F1AE49 /* NESGameViewController.m */,
-				D081CB7A1B1A78E100879BB2 /* NESGameView.h */,
-				D081CB7B1B1A78E100879BB2 /* NESGameView.m */,
 				D0A71B4A1AEDD9D800830564 /* smb.nes */,
 				D078F7D61AEA163800F1AE49 /* Supporting Files */,
 			);
@@ -1979,6 +2276,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D0F2B9171BAA3F56004714FE /* NESTV */ = {
+			isa = PBXGroup;
+			children = (
+				D0F2B91B1BAA3F56004714FE /* NESAppDelegate.h */,
+				D0F2B91C1BAA3F56004714FE /* NESAppDelegate.m */,
+				D0F2B91E1BAA3F56004714FE /* NESGameViewController.h */,
+				D0F2B91F1BAA3F56004714FE /* NESGameViewController.m */,
+				D0F2B94C1BAA43AB004714FE /* smb.nes */,
+				D0F2B9181BAA3F56004714FE /* Supporting Files */,
+			);
+			path = NESTV;
+			sourceTree = "<group>";
+		};
+		D0F2B9181BAA3F56004714FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F2B9241BAA3F56004714FE /* Images.xcassets */,
+				D0F2B9261BAA3F56004714FE /* Info.plist */,
+				D0F2B9191BAA3F56004714FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1999,6 +2319,16 @@
 				D0A71B471AEDD13500830564 /* NESEmulator.h in Headers */,
 				D01A3FAF1B325D90008D5F87 /* NESAvailability.h in Headers */,
 				D0A71B461AEDD10200830564 /* nesemu2.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B9391BAA4129004714FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B93A1BAA4129004714FE /* NESEmulator.h in Headers */,
+				D0F2B93B1BAA4129004714FE /* NESAvailability.h in Headers */,
+				D0F2B93C1BAA4129004714FE /* nesemu2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2153,6 +2483,59 @@
 			productReference = D0B4A0471B23C6DB003EE0B2 /* NESWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		D0F2B8341BAA3CAD004714FE /* libnesemu2-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F2B90E1BAA3CAD004714FE /* Build configuration list for PBXNativeTarget "libnesemu2-tvOS" */;
+			buildPhases = (
+				D0F2B8351BAA3CAD004714FE /* Sources */,
+				D0F2B90C1BAA3CAD004714FE /* Frameworks */,
+				D0F2B90D1BAA3CAD004714FE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libnesemu2-tvOS";
+			productName = nesemu2;
+			productReference = D0F2B9111BAA3CAD004714FE /* libnesemu2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D0F2B9151BAA3F56004714FE /* NESTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F2B9271BAA3F56004714FE /* Build configuration list for PBXNativeTarget "NESTV" */;
+			buildPhases = (
+				D0F2B9121BAA3F56004714FE /* Sources */,
+				D0F2B9131BAA3F56004714FE /* Frameworks */,
+				D0F2B94E1BAA59DB004714FE /* Embed Frameworks */,
+				D0F2B9141BAA3F56004714FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NESTV;
+			productName = NESTV;
+			productReference = D0F2B9161BAA3F56004714FE /* NES.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0F2B92A1BAA4129004714FE /* nesemu2-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F2B9411BAA4129004714FE /* Build configuration list for PBXNativeTarget "nesemu2-tvOS" */;
+			buildPhases = (
+				D0F2B92B1BAA4129004714FE /* Sources */,
+				D0F2B9321BAA4129004714FE /* Frameworks */,
+				D0F2B9391BAA4129004714FE /* Headers */,
+				D0F2B93D1BAA4129004714FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nesemu2-tvOS";
+			productName = Nesemu2;
+			productReference = D0F2B9441BAA4129004714FE /* nesemu2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2186,6 +2569,10 @@
 					D0B4A0461B23C6DB003EE0B2 = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					D0F2B9151BAA3F56004714FE = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 87PW93R2ZR;
+					};
 				};
 			};
 			buildConfigurationList = D078F7CE1AEA163800F1AE49 /* Build configuration list for PBXProject "NES" */;
@@ -2202,13 +2589,16 @@
 			projectRoot = "";
 			targets = (
 				D078F7D21AEA163800F1AE49 /* NES */,
+				D0F2B9151BAA3F56004714FE /* NESTV */,
 				D0B4A0461B23C6DB003EE0B2 /* NESWidget */,
 				D01A3E8B1B32520A008D5F87 /* NESWatch */,
 				D01A3E971B32520A008D5F87 /* NESWatchExtension */,
 				D09319D81AEAC05F00E467A7 /* libnesemu2-iOS */,
 				D01A3EB61B3254CD008D5F87 /* libnesemu2-watchOS */,
+				D0F2B8341BAA3CAD004714FE /* libnesemu2-tvOS */,
 				D0612DDC1AEDCEA1005964A7 /* nesemu2-iOS */,
 				D01A3F9A1B325A4C008D5F87 /* nesemu2-watchOS */,
+				D0F2B92A1BAA4129004714FE /* nesemu2-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -2266,6 +2656,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B4A05A1B23C7C1003EE0B2 /* smb.nes in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B9141BAA3F56004714FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B9251BAA3F56004714FE /* Images.xcassets in Resources */,
+				D0F2B94D1BAA43AB004714FE /* smb.nes in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B93D1BAA4129004714FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B93E1BAA4129004714FE /* data in Resources */,
+				D0F2B93F1BAA4129004714FE /* NESFragment.glsl in Resources */,
+				D0F2B9401BAA4129004714FE /* NESVertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2565,7 +2974,6 @@
 				D006DB161AF3236A003B6910 /* NESGameViewController.m in Sources */,
 				D006DB171AF3236A003B6910 /* NESAppDelegate.m in Sources */,
 				D006DB181AF3236A003B6910 /* main.m in Sources */,
-				D081CB7C1B1A78E100879BB2 /* NESGameView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2795,6 +3203,250 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B4A0501B23C6DB003EE0B2 /* NESTodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B8351BAA3CAD004714FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B8361BAA3CAD004714FE /* ffv.c in Sources */,
+				D0F2B8371BAA3CAD004714FE /* contra-function-16.c in Sources */,
+				D0F2B8381BAA3CAD004714FE /* rumblestation.c in Sources */,
+				D0F2B8391BAA3CAD004714FE /* taito-tc0190fmc.c in Sources */,
+				D0F2B83A1BAA3CAD004714FE /* log.c in Sources */,
+				D0F2B83B1BAA3CAD004714FE /* tqrom.c in Sources */,
+				D0F2B83C1BAA3CAD004714FE /* bxrom.c in Sources */,
+				D0F2B83D1BAA3CAD004714FE /* 163.c in Sources */,
+				D0F2B83E1BAA3CAD004714FE /* sunsoft-4.c in Sources */,
+				D0F2B83F1BAA3CAD004714FE /* paths.c in Sources */,
+				D0F2B8401BAA3CAD004714FE /* state.c in Sources */,
+				D0F2B8411BAA3CAD004714FE /* superhik4in1.c in Sources */,
+				D0F2B8421BAA3CAD004714FE /* vrc2.c in Sources */,
+				D0F2B8431BAA3CAD004714FE /* ines20.c in Sources */,
+				D0F2B8441BAA3CAD004714FE /* general.c in Sources */,
+				D0F2B8451BAA3CAD004714FE /* 65in1.c in Sources */,
+				D0F2B8461BAA3CAD004714FE /* stricmp.c in Sources */,
+				D0F2B8471BAA3CAD004714FE /* vram.c in Sources */,
+				D0F2B8481BAA3CAD004714FE /* cpu.c in Sources */,
+				D0F2B8491BAA3CAD004714FE /* joypad1.c in Sources */,
+				D0F2B84A1BAA3CAD004714FE /* step.c in Sources */,
+				D0F2B84B1BAA3CAD004714FE /* history.c in Sources */,
+				D0F2B84C1BAA3CAD004714FE /* s_FME7.c in Sources */,
+				D0F2B84D1BAA3CAD004714FE /* mario1-malee2.c in Sources */,
+				D0F2B84E1BAA3CAD004714FE /* ks202.c in Sources */,
+				D0F2B84F1BAA3CAD004714FE /* qj.c in Sources */,
+				D0F2B8501BAA3CAD004714FE /* sunsoft-3.c in Sources */,
+				D0F2B8511BAA3CAD004714FE /* cart.c in Sources */,
+				D0F2B8521BAA3CAD004714FE /* sa-003x.c in Sources */,
+				D0F2B8531BAA3CAD004714FE /* vrc3.c in Sources */,
+				D0F2B8541BAA3CAD004714FE /* fsb.c in Sources */,
+				D0F2B8551BAA3CAD004714FE /* caltron6in1.c in Sources */,
+				D0F2B8561BAA3CAD004714FE /* tw.c in Sources */,
+				D0F2B8571BAA3CAD004714FE /* 22211.c in Sources */,
+				D0F2B8581BAA3CAD004714FE /* x1-005.c in Sources */,
+				D0F2B8591BAA3CAD004714FE /* asder.c in Sources */,
+				D0F2B85A1BAA3CAD004714FE /* memutil.c in Sources */,
+				D0F2B85B1BAA3CAD004714FE /* biomiraclea.c in Sources */,
+				D0F2B85C1BAA3CAD004714FE /* 1200in1.c in Sources */,
+				D0F2B85D1BAA3CAD004714FE /* cprom.c in Sources */,
+				D0F2B85E1BAA3CAD004714FE /* strutil.c in Sources */,
+				D0F2B85F1BAA3CAD004714FE /* type-d.c in Sources */,
+				D0F2B8601BAA3CAD004714FE /* namcot-108.c in Sources */,
+				D0F2B8611BAA3CAD004714FE /* 74ls374n.c in Sources */,
+				D0F2B8621BAA3CAD004714FE /* shlz.c in Sources */,
+				D0F2B8631BAA3CAD004714FE /* active.c in Sources */,
+				D0F2B8641BAA3CAD004714FE /* opencorp.c in Sources */,
+				D0F2B8651BAA3CAD004714FE /* mimic-1.c in Sources */,
+				D0F2B8661BAA3CAD004714FE /* sh2.c in Sources */,
+				D0F2B8671BAA3CAD004714FE /* supergk.c in Sources */,
+				D0F2B8681BAA3CAD004714FE /* disassemble.c in Sources */,
+				D0F2B8691BAA3CAD004714FE /* tam-s1.c in Sources */,
+				D0F2B86A1BAA3CAD004714FE /* tepples.c in Sources */,
+				D0F2B86B1BAA3CAD004714FE /* rambo-1.c in Sources */,
+				D0F2B86C1BAA3CAD004714FE /* s_FDS.c in Sources */,
+				D0F2B86D1BAA3CAD004714FE /* jf11.c in Sources */,
+				D0F2B86E1BAA3CAD004714FE /* super42in1.c in Sources */,
+				D0F2B86F1BAA3CAD004714FE /* slre.c in Sources */,
+				D0F2B8701BAA3CAD004714FE /* nes.c in Sources */,
+				D0F2B8711BAA3CAD004714FE /* 72in1.c in Sources */,
+				D0F2B8721BAA3CAD004714FE /* tca01.c in Sources */,
+				D0F2B8731BAA3CAD004714FE /* big7in1.c in Sources */,
+				D0F2B8741BAA3CAD004714FE /* nitra.c in Sources */,
+				D0F2B8751BAA3CAD004714FE /* sa-7200x.c in Sources */,
+				D0F2B8761BAA3CAD004714FE /* tc-112.c in Sources */,
+				D0F2B8771BAA3CAD004714FE /* hle.c in Sources */,
+				D0F2B8781BAA3CAD004714FE /* sachen-8259.c in Sources */,
+				D0F2B8791BAA3CAD004714FE /* block.c in Sources */,
+				D0F2B87A1BAA3CAD004714FE /* misc.c in Sources */,
+				D0F2B87B1BAA3CAD004714FE /* vars.c in Sources */,
+				D0F2B87C1BAA3CAD004714FE /* nrom.c in Sources */,
+				D0F2B87D1BAA3CAD004714FE /* ppu.c in Sources */,
+				D0F2B87E1BAA3CAD004714FE /* un1rom.c in Sources */,
+				D0F2B87F1BAA3CAD004714FE /* s_N106.c in Sources */,
+				D0F2B8801BAA3CAD004714FE /* patch.c in Sources */,
+				D0F2B8811BAA3CAD004714FE /* vector.c in Sources */,
+				D0F2B8821BAA3CAD004714FE /* txrom.c in Sources */,
+				D0F2B8831BAA3CAD004714FE /* ines.c in Sources */,
+				D0F2B8841BAA3CAD004714FE /* vrc4.c in Sources */,
+				D0F2B8851BAA3CAD004714FE /* type-h.c in Sources */,
+				D0F2B8861BAA3CAD004714FE /* unif.c in Sources */,
+				D0F2B8871BAA3CAD004714FE /* xmlrole.c in Sources */,
+				D0F2B8881BAA3CAD004714FE /* mario7in1.c in Sources */,
+				D0F2B8891BAA3CAD004714FE /* pxrom.c in Sources */,
+				D0F2B88A1BAA3CAD004714FE /* vrc6.c in Sources */,
+				D0F2B88B1BAA3CAD004714FE /* namcot-163.c in Sources */,
+				D0F2B88C1BAA3CAD004714FE /* fxrom.c in Sources */,
+				D0F2B88D1BAA3CAD004714FE /* colordreams.c in Sources */,
+				D0F2B88E1BAA3CAD004714FE /* ss88006.c in Sources */,
+				D0F2B88F1BAA3CAD004714FE /* magicfloor.c in Sources */,
+				D0F2B8901BAA3CAD004714FE /* sa-0161m.c in Sources */,
+				D0F2B8911BAA3CAD004714FE /* superlionking.c in Sources */,
+				D0F2B8921BAA3CAD004714FE /* unif.c in Sources */,
+				D0F2B8931BAA3CAD004714FE /* config.c in Sources */,
+				D0F2B8941BAA3CAD004714FE /* gxrom_mxrom.c in Sources */,
+				D0F2B8951BAA3CAD004714FE /* powerpad.c in Sources */,
+				D0F2B8961BAA3CAD004714FE /* superhikXin1.c in Sources */,
+				D0F2B8971BAA3CAD004714FE /* disk.c in Sources */,
+				D0F2B8981BAA3CAD004714FE /* 35in1.c in Sources */,
+				D0F2B8991BAA3CAD004714FE /* smb2b.c in Sources */,
+				D0F2B89A1BAA3CAD004714FE /* bf909x.c in Sources */,
+				D0F2B89B1BAA3CAD004714FE /* 70in1.c in Sources */,
+				D0F2B89C1BAA3CAD004714FE /* bitcorp.c in Sources */,
+				D0F2B89D1BAA3CAD004714FE /* 8259x.c in Sources */,
+				D0F2B89E1BAA3CAD004714FE /* vrc1.c in Sources */,
+				D0F2B89F1BAA3CAD004714FE /* event.c in Sources */,
+				D0F2B8A01BAA3CAD004714FE /* magicseries.c in Sources */,
+				D0F2B8A11BAA3CAD004714FE /* io.c in Sources */,
+				D0F2B8A21BAA3CAD004714FE /* 34x3.c in Sources */,
+				D0F2B8A31BAA3CAD004714FE /* ups.c in Sources */,
+				D0F2B8A41BAA3CAD004714FE /* tcu01.c in Sources */,
+				D0F2B8A51BAA3CAD004714FE /* ips.c in Sources */,
+				D0F2B8A61BAA3CAD004714FE /* crc32.c in Sources */,
+				D0F2B8A71BAA3CAD004714FE /* zapper.c in Sources */,
+				D0F2B8A81BAA3CAD004714FE /* s_VRC6.c in Sources */,
+				D0F2B8A91BAA3CAD004714FE /* sunsoft-5b.c in Sources */,
+				D0F2B8AA1BAA3CAD004714FE /* reset4in1.c in Sources */,
+				D0F2B8AB1BAA3CAD004714FE /* mmc2.c in Sources */,
+				D0F2B8AC1BAA3CAD004714FE /* ballgames11in1.c in Sources */,
+				D0F2B8AD1BAA3CAD004714FE /* sgz.c in Sources */,
+				D0F2B8AE1BAA3CAD004714FE /* commands.c in Sources */,
+				D0F2B8AF1BAA3CAD004714FE /* nanjing.c in Sources */,
+				D0F2B8B01BAA3CAD004714FE /* nsf.c in Sources */,
+				D0F2B8B11BAA3CAD004714FE /* mmc3.c in Sources */,
+				D0F2B8B21BAA3CAD004714FE /* 36in1.c in Sources */,
+				D0F2B8B31BAA3CAD004714FE /* hosenkan.c in Sources */,
+				D0F2B8B41BAA3CAD004714FE /* tc0190fmc_pal16r4.c in Sources */,
+				D0F2B8B51BAA3CAD004714FE /* pads.c in Sources */,
+				D0F2B8B61BAA3CAD004714FE /* fds.c in Sources */,
+				D0F2B8B71BAA3CAD004714FE /* vrc7.c in Sources */,
+				D0F2B8B81BAA3CAD004714FE /* palette.c in Sources */,
+				D0F2B8B91BAA3CAD004714FE /* fk23c.c in Sources */,
+				D0F2B8BA1BAA3CAD004714FE /* dbz5.c in Sources */,
+				D0F2B8BB1BAA3CAD004714FE /* jf16.c in Sources */,
+				D0F2B8BC1BAA3CAD004714FE /* apu.c in Sources */,
+				D0F2B8BD1BAA3CAD004714FE /* h2288.c in Sources */,
+				D0F2B8BE1BAA3CAD004714FE /* nsf.c in Sources */,
+				D0F2B8BF1BAA3CAD004714FE /* studygame.c in Sources */,
+				D0F2B8C01BAA3CAD004714FE /* latch.c in Sources */,
+				D0F2B8C11BAA3CAD004714FE /* deathrace.c in Sources */,
+				D0F2B8C21BAA3CAD004714FE /* 20in1.c in Sources */,
+				D0F2B8C31BAA3CAD004714FE /* uy.c in Sources */,
+				D0F2B8C41BAA3CAD004714FE /* s_MMC5.c in Sources */,
+				D0F2B8C51BAA3CAD004714FE /* fds.c in Sources */,
+				D0F2B8C61BAA3CAD004714FE /* nina-006.c in Sources */,
+				D0F2B8C71BAA3CAD004714FE /* events.c in Sources */,
+				D0F2B8C81BAA3CAD004714FE /* h3001.c in Sources */,
+				D0F2B8C91BAA3CAD004714FE /* ppu.c in Sources */,
+				D0F2B8CA1BAA3CAD004714FE /* joypad0.c in Sources */,
+				D0F2B8CB1BAA3CAD004714FE /* x1-017.c in Sources */,
+				D0F2B8CC1BAA3CAD004714FE /* 21in1.c in Sources */,
+				D0F2B8CD1BAA3CAD004714FE /* xmltok.c in Sources */,
+				D0F2B8CE1BAA3CAD004714FE /* sxrom.c in Sources */,
+				D0F2B8CF1BAA3CAD004714FE /* zs.c in Sources */,
+				D0F2B8D01BAA3CAD004714FE /* 15in1.c in Sources */,
+				D0F2B8D11BAA3CAD004714FE /* 3425.c in Sources */,
+				D0F2B8D21BAA3CAD004714FE /* holydiver.c in Sources */,
+				D0F2B8D31BAA3CAD004714FE /* mmc1.c in Sources */,
+				D0F2B8D41BAA3CAD004714FE /* sunsoft-1.c in Sources */,
+				D0F2B8D51BAA3CAD004714FE /* cnrom.c in Sources */,
+				D0F2B8D61BAA3CAD004714FE /* null.c in Sources */,
+				D0F2B8D71BAA3CAD004714FE /* hes.c in Sources */,
+				D0F2B8D81BAA3CAD004714FE /* unrom_74hc08.c in Sources */,
+				D0F2B8D91BAA3CAD004714FE /* dripgame.c in Sources */,
+				D0F2B8DA1BAA3CAD004714FE /* ines20.c in Sources */,
+				D0F2B8DB1BAA3CAD004714FE /* dxrom.c in Sources */,
+				D0F2B8DC1BAA3CAD004714FE /* s_DRIP.c in Sources */,
+				D0F2B8DD1BAA3CAD004714FE /* xmlparse.c in Sources */,
+				D0F2B8DE1BAA3CAD004714FE /* region.c in Sources */,
+				D0F2B8DF1BAA3CAD004714FE /* memory.c in Sources */,
+				D0F2B8E01BAA3CAD004714FE /* inputdev.c in Sources */,
+				D0F2B8E11BAA3CAD004714FE /* goldengame260in1.c in Sources */,
+				D0F2B8E21BAA3CAD004714FE /* goldenfive.c in Sources */,
+				D0F2B8E31BAA3CAD004714FE /* cnrom_cp.c in Sources */,
+				D0F2B8E41BAA3CAD004714FE /* pikachuy2k.c in Sources */,
+				D0F2B8E51BAA3CAD004714FE /* axrom.c in Sources */,
+				D0F2B8E61BAA3CAD004714FE /* d-1012.c in Sources */,
+				D0F2B8E71BAA3CAD004714FE /* super700in1.c in Sources */,
+				D0F2B8E81BAA3CAD004714FE /* nes.c in Sources */,
+				D0F2B8E91BAA3CAD004714FE /* 76in1.c in Sources */,
+				D0F2B8EA1BAA3CAD004714FE /* sunsoft-2.c in Sources */,
+				D0F2B8EB1BAA3CAD004714FE /* hxrom.c in Sources */,
+				D0F2B8EC1BAA3CAD004714FE /* pal_zz.c in Sources */,
+				D0F2B8ED1BAA3CAD004714FE /* strikewolf.c in Sources */,
+				D0F2B8EE1BAA3CAD004714FE /* sl1632.c in Sources */,
+				D0F2B8EF1BAA3CAD004714FE /* mappers.c in Sources */,
+				D0F2B8F01BAA3CAD004714FE /* 31in1.c in Sources */,
+				D0F2B8F11BAA3CAD004714FE /* racermate.c in Sources */,
+				D0F2B8F21BAA3CAD004714FE /* xmltok_impl.c in Sources */,
+				D0F2B8F31BAA3CAD004714FE /* mmc5.c in Sources */,
+				D0F2B8F41BAA3CAD004714FE /* mmc4.c in Sources */,
+				D0F2B8F51BAA3CAD004714FE /* 22in1.c in Sources */,
+				D0F2B8F61BAA3CAD004714FE /* ines.c in Sources */,
+				D0F2B8F71BAA3CAD004714FE /* nina-001.c in Sources */,
+				D0F2B8F81BAA3CAD004714FE /* cartdb.c in Sources */,
+				D0F2B8F91BAA3CAD004714FE /* io.c in Sources */,
+				D0F2B8FA1BAA3CAD004714FE /* tilecache.c in Sources */,
+				D0F2B8FB1BAA3CAD004714FE /* movie.c in Sources */,
+				D0F2B8FC1BAA3CAD004714FE /* generator.c in Sources */,
+				D0F2B8FD1BAA3CAD004714FE /* emu.c in Sources */,
+				D0F2B8FE1BAA3CAD004714FE /* diskutil.c in Sources */,
+				D0F2B8FF1BAA3CAD004714FE /* memfile.c in Sources */,
+				D0F2B9001BAA3CAD004714FE /* tc0190fmc.c in Sources */,
+				D0F2B9011BAA3CAD004714FE /* 150in1.c in Sources */,
+				D0F2B9021BAA3CAD004714FE /* kasing.c in Sources */,
+				D0F2B9031BAA3CAD004714FE /* uxrom.c in Sources */,
+				D0F2B9041BAA3CAD004714FE /* s_VRC7.c in Sources */,
+				D0F2B9051BAA3CAD004714FE /* mxmdhtwo.c in Sources */,
+				D0F2B9061BAA3CAD004714FE /* decathlon.c in Sources */,
+				D0F2B9071BAA3CAD004714FE /* exrom.c in Sources */,
+				D0F2B9081BAA3CAD004714FE /* parser.c in Sources */,
+				D0F2B9091BAA3CAD004714FE /* genie.c in Sources */,
+				D0F2B90A1BAA3CAD004714FE /* xmltok_ns.c in Sources */,
+				D0F2B90B1BAA3CAD004714FE /* util.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B9121BAA3F56004714FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B9201BAA3F56004714FE /* NESGameViewController.m in Sources */,
+				D0F2B91D1BAA3F56004714FE /* NESAppDelegate.m in Sources */,
+				D0F2B91A1BAA3F56004714FE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F2B92B1BAA4129004714FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F2B92C1BAA4129004714FE /* NESShaders.metal in Sources */,
+				D0F2B92D1BAA4129004714FE /* NESSystem.m in Sources */,
+				D0F2B92E1BAA4129004714FE /* NESVideo.m in Sources */,
+				D0F2B92F1BAA4129004714FE /* NESInput.m in Sources */,
+				D0F2B9301BAA4129004714FE /* NESEmulator.m in Sources */,
+				D0F2B9311BAA4129004714FE /* NESSound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3037,6 +3689,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kramerapps.nesemu2;
 				PRODUCT_NAME = nesemu2;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/nesemu2/nesemu2/source\"";
 			};
@@ -3052,6 +3705,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kramerapps.nesemu2;
 				PRODUCT_NAME = nesemu2;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/nesemu2/nesemu2/source\"";
 			};
@@ -3097,7 +3751,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3134,7 +3788,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				SDKROOT = iphoneos;
+				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3229,6 +3883,110 @@
 			};
 			name = Release;
 		};
+		D0F2B90F1BAA3CAD004714FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				OTHER_CFLAGS = (
+					"-DQUICK_SPRITES",
+					"-DCPU_UNDOC",
+					"-DOSX",
+					"-w",
+					"-Wno-error=implicit-function-declaration",
+				);
+				PRODUCT_NAME = nesemu2;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/nesemu2/nesemu2/source\"";
+			};
+			name = Debug;
+		};
+		D0F2B9101BAA3CAD004714FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				OTHER_CFLAGS = (
+					"-DQUICK_SPRITES",
+					"-DCPU_UNDOC",
+					"-DOSX",
+					"-funroll-loops",
+					"-fomit-frame-pointer",
+					"-w",
+					"-Wno-error=implicit-function-declaration",
+				);
+				PRODUCT_NAME = nesemu2;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/nesemu2/nesemu2/source\"";
+			};
+			name = Release;
+		};
+		D0F2B9281BAA3F56004714FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NESTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kramerapps.nes;
+				PRODUCT_NAME = NES;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		D0F2B9291BAA3F56004714FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NESTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kramerapps.nes;
+				PRODUCT_NAME = NES;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		D0F2B9421BAA4129004714FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = nesemu2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kramerapps.nesemu2;
+				PRODUCT_NAME = nesemu2;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/nesemu2/nesemu2/source\"";
+			};
+			name = Debug;
+		};
+		D0F2B9431BAA4129004714FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = nesemu2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kramerapps.nesemu2;
+				PRODUCT_NAME = nesemu2;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/nesemu2/nesemu2/source\"";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3309,6 +4067,32 @@
 			buildConfigurations = (
 				D0B4A0571B23C6DC003EE0B2 /* Debug */,
 				D0B4A0581B23C6DC003EE0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F2B90E1BAA3CAD004714FE /* Build configuration list for PBXNativeTarget "libnesemu2-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F2B90F1BAA3CAD004714FE /* Debug */,
+				D0F2B9101BAA3CAD004714FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F2B9271BAA3F56004714FE /* Build configuration list for PBXNativeTarget "NESTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F2B9281BAA3F56004714FE /* Debug */,
+				D0F2B9291BAA3F56004714FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0F2B9411BAA4129004714FE /* Build configuration list for PBXNativeTarget "nesemu2-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F2B9421BAA4129004714FE /* Debug */,
+				D0F2B9431BAA4129004714FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
